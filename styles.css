@@ -1,46 +1,117 @@
-h1, h2,p{
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-image: url('image/255171b9c2eed15ab69404c6f94618e473b7e3e1.jpg');
+    background-size:cover;
+    background-repeat:no-repeat;
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
 }
 
-article {
-    margin-left: 20%;
+h1, h2, p{
+    text-align:center;
 }
 
-.tea-flavor {
-    width: 409px;
+h1{
+    font-size: 40px;
+    margin:0;
 }
 
-.tea-price {
-    width: 120%;
-margin-top: -34px;
+h2{
+    font-size: 35px;
 }
 
-h2 {
-    font-size: 30px;
-    display: block;
-    font-size: 1.5em;
-    margin-block-start: 0.83em;
-    margin-block-end: 0.83em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: bold;
+.top-line,.bottom-line{
+    height: 2px;
+    background-color: rgba(228, 202, 168, 0.904);
+    border-color: rgb(66, 63, 60);
+    box-shadow: -0px 4px 15px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: -0px 4px 15px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: -0px 9px 15px 0px rgba(0,0,0,0.75);
 }
 
-body {
-    background-size: cover;
-    background-repeat: no-repeat;
-    font-family: "Oswald", sans-serif;
-    opacity: 0.3;
+.top-line{
+    margin-top: 25px;
 }
 
-img {
-    bottom: -50px;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: -1;
-    position: absolute;
-    width: 100%;
-    height: 800px;
+.bottom-line{
+    margin-top: 25px;
+    margin-bottom: 30px;
 }
 
+.tea-menu{
+    width: 80%;
+    max-width: 500px;
+    background-color: rgba(228, 202, 168, 0.404);
+    /* background-color: orangered; */
+    margin-left:auto;
+    margin-right: auto;
+    /* padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px; */
+    padding: 20px;
+}
+
+.established{
+    font-style:italic;
+}
+
+
+.tea-icon{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+
+
+img{
+    /* display: block; */
+    height: 40px;
+    width: 40px;
+    /* margin:auto; */
+    margin: auto 5px;
+}
+
+.tea-items p{
+    /* background-color:orangered; */
+    display: inline-block;
+    font-weight: 400;
+    margin: 5px 0px;
+    /* margin-top: 5px;
+    margin-bottom: 5px; */
+}
+
+.tea-flavor, .collections-flavor{
+    width: 75%;
+    /* background-color:green; */
+    text-align: left;
+}
+
+.tea-price, .collections-price {
+    width: 25%;
+    /* background-color:yellow; */
+    text-align: right;
+}
+
+footer{
+    font-size: 14px;
+}
+
+a:link {
+    color: black;
+}
+
+/*lvha*/
+a:visited{
+    color:white;
+}
+
+a:hover{
+    color: lightgrey;
+}
+
+a:active{
+    color: yellow;
+}
